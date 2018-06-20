@@ -160,7 +160,43 @@ header {
   background-color: #dcdcf5;
 }
 /*FOOTER*/
+footer {
+  background: url("../img/fundo-rodape.png");
+}
+.social a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+  /* image replacement */
+  display: block;
+  text-indent: -9999px;
+}
+.social a[href*="facebook.com"] {
+  background: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+  background: url(../img/twitter.png);
+}
+.social a[href*="google.com"] {
+  background: url(../img/googleplus.png);
+}
 
+footer {
+  padding: 20px;
+  margin-top: 30px;
+}
+footer .container {
+  position: relative;
+}
+.social {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.social li {
+  float: left;
+  margin-left: 25px;
+}
 /*MOBILE*/
 
 @media (max-width: 1000px) {
@@ -232,5 +268,8 @@ header {
   }
   .busca input[type="text"] {
     width: 84%;
+  }
+  .social {
+    right: -45px;
   }
 }
