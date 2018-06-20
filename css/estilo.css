@@ -1,214 +1,236 @@
 /*GLOBAL*/
 
 body {
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #333333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .container {
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 /**/
 
 header {
-    position: relative;
+  position: relative;
 }
 
 .sacola {
-    background: url(../img/sacola.png) no-repeat top right;
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    position: absolute;
-    top: 10px;
-    right: 13%;
+  background: url(../img/sacola.png) no-repeat top right;
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+  position: absolute;
+  top: 10px;
+  right: 13%;
 }
 
 .menu-opcoes {
-    position: absolute;
-    top: 69%;
-    right: 13%;
+  position: absolute;
+  top: 69%;
+  right: 13%;
 }
 
 .menu-opcoes ul {
-    font-size: 15px;
-    margin-bottom: 14px;
+  font-size: 15px;
+  margin-bottom: 14px;
 }
 
 .menu-opcoes li {
-    display: inline-block;
-    padding: 5px;
-    margin-left: 10px;
+  display: inline-block;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .menu-opcoes a {
-    color: #003366;
-    font-size: 1em;
+  color: #003366;
+  font-size: 1em;
 }
 
 /*Secao 02*/
 
 .busca,
 .menu-departamento {
-    float: left;
+  float: left;
 }
 
 .menu-departamento {
-    clear: left;
+  clear: left;
 }
 
 .busca {
-    text-transform: uppercase;
-    padding: 16px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    background-color: #dcdcdc;
-    margin-top: 10px;
+  text-transform: uppercase;
+  padding: 16px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  margin-top: 10px;
 }
 
 .busca input {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-.busca input[type=text] {
-    border-radius: 10px;
+.busca input[type="text"] {
+  border-radius: 10px;
 }
 
 .busca h2 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .destaque {
-    margin-left: 1%;
-    width: 76%;
-    margin-top: 10px;
+  margin-left: 1%;
+  width: 76%;
+  margin-top: 10px;
 }
 
 .menu-departamento {
-    background-color: #dcdcdc;
-    margin-top: 10px;
-    padding: 10px 0;
-    width: 22%;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: bold;
+  background-color: #dcdcdc;
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 22%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .menu-departamento h2 {
-    padding: 5px 13px;
+  padding: 5px 13px;
 }
 
 .menu-departamento li {
-    background-color: #fff;
-    border-bottom: .5px solid #dcdcdc;
-    padding: 5px 13px;
+  background-color: #fff;
+  border-bottom: 0.5px solid #dcdcdc;
+  padding: 5px 13px;
 }
 
 .menu-departamento a {
-    text-decoration: none;
-    color: #333333;
+  text-decoration: none;
+  color: #333333;
 }
 
 /*Paineis*/
 
 .paineis {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .painel {
-    width: 50%;
+  width: 50%;
 }
 
 .novidades {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .painel h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: .6em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.6em;
 }
 
 .painel li {
-    display: inline-block;
-    vertical-align: top;
-    width: 29.6%;
-    padding-bottom: 10px;
-    margin-left: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 29.6%;
+  padding-bottom: 10px;
+  margin-left: 12px;
 }
 
 .painel img {
-    width: 100%;
+  width: 100%;
 }
 
 .painel a {
-    color: #333;
-    text-decoration: none;
-    text-align: center;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
 }
 
 .novidades {
-    background-color: #f5dcdc;
+  background-color: #f5dcdc;
 }
 
 .mais-vendidos {
-    background-color: #dcdcf5;
+  background-color: #dcdcf5;
 }
+/*FOOTER*/
 
 /*MOBILE*/
 
-@media(max-width: 1000px) {
-    header {
-        margin-bottom: 60px;
-    }
-    header .container .titulo {
-        width: 60%;
-        margin: 0 auto;
-    }
-    header .container .titulo img {
-        width: 100%;
-    }
-    .sacola {
-        display: none;
-    }
-    header .container nav {
-        position: absolute;
-        width: 80%;
-        top: 92%;
-        left: 19%;
-        margin-top: 10px;
-    }
-    .busca {
-        width: 63%;
-        margin: 10px 16%;
-        text-align: center;
-    }
-    .busca form {
-        box-sizing: border-box;
-        width: 70%;
-        margin: 0 auto;
-    }
-    .menu-departamento {
-        clear: both;
-        display: block;
-        width: 100%;
-    }
-    .destaque {
-        display: block;
-        width: 100%;
-    }
+@media (max-width: 1000px) {
+  header {
+    margin-bottom: 60px;
+  }
+
+  header .container .titulo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  header .container .titulo img {
+    width: 100%;
+  }
+
+  .sacola {
+    display: none;
+  }
+
+  header .container nav {
+    position: absolute;
+    width: 80%;
+    top: 92%;
+    left: 19%;
+    margin-top: 10px;
+  }
+  /*BUSCA*/
+  .busca {
+    width: 63%;
+    margin: 10px 16%;
+    text-align: center;
+  }
+
+  .busca form {
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .menu-departamento {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+
+  .destaque {
+    display: block;
+    width: 100%;
+  }
+
+  .paineis {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .painel {
+    width: 100%;
+  }
+
+  .painel li {
+    width: 43%;
+  }
 }
 
-@media(max-width: 575px) {
-    .busca form {
-        width: 80%;
-    }
-    .busca input[type="text"] {
-        width: 84%;
-    }
+@media (max-width: 575px) {
+  .busca form {
+    width: 80%;
+  }
+  .busca input[type="text"] {
+    width: 84%;
+  }
 }
