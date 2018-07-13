@@ -49,6 +49,15 @@ header {
   font-size: 1em;
 }
 
+.menu-opcoes a:hover {
+  color: #007dc6;
+  transition: 0.6s;
+}
+
+.menu-opcoes a:active {
+  color: #867dc6;
+}
+
 /*Secao 02*/
 
 .busca,
@@ -58,6 +67,23 @@ header {
 
 .menu-departamento {
   clear: left;
+}
+
+.menu-departamento li ul {
+  display: none;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+}
+
+.menu-departamento li ul a::before {
+  content: '\272A';
+  padding-right: .3em;
+}
+
+.menu-departamento li:hover ul {
+  display: block;
 }
 
 .busca {
@@ -134,6 +160,12 @@ header {
   padding: 0.6em;
 }
 
+.painel h2:before {
+  content: '\2756';
+  margin: .2em;
+  opacity: .9;
+}
+
 .painel li {
   display: inline-block;
   vertical-align: top;
@@ -159,10 +191,13 @@ header {
 .mais-vendidos {
   background-color: #dcdcf5;
 }
+
 /*FOOTER*/
+
 footer {
   background: url("../img/fundo-rodape.png");
 }
+
 .social a {
   /* tamanho da imagem */
   height: 32px;
@@ -171,12 +206,15 @@ footer {
   display: block;
   text-indent: -9999px;
 }
+
 .social a[href*="facebook.com"] {
   background: url(../img/facebook.png);
 }
+
 .social a[href*="twitter.com"] {
   background: url(../img/twitter.png);
 }
+
 .social a[href*="google.com"] {
   background: url(../img/googleplus.png);
 }
@@ -185,38 +223,38 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
+
 footer .container {
   position: relative;
 }
+
 .social {
   position: absolute;
   top: 12px;
   right: 0;
 }
+
 .social li {
   float: left;
   margin-left: 25px;
 }
+
 /*MOBILE*/
 
 @media (max-width: 1000px) {
   header {
     margin-bottom: 60px;
   }
-
   header .container .titulo {
     width: 60%;
     margin: 0 auto;
   }
-
   header .container .titulo img {
     width: 100%;
   }
-
   .sacola {
     display: none;
   }
-
   header .container nav {
     position: absolute;
     width: 80%;
@@ -230,33 +268,27 @@ footer .container {
     margin: 10px 16%;
     text-align: center;
   }
-
   .busca form {
     box-sizing: border-box;
     width: 70%;
     margin: 0 auto;
   }
-
   .menu-departamento {
     clear: both;
     display: block;
     width: 100%;
   }
-
   .destaque {
     display: block;
     width: 100%;
   }
-
   .paineis {
     display: flex;
     flex-direction: column;
   }
-
   .painel {
     width: 100%;
   }
-
   .painel li {
     width: 43%;
   }
