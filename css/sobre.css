@@ -1,4 +1,6 @@
 body {
+    margin: 0px;
+    padding: 0px;
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande" sans-serif;
 }
@@ -104,6 +106,21 @@ footer .container {
 .social a[href*="google.com"] {
     background: url('../img/googleplus.png');
 }
+
+.historia figure+p::first-letter {
+    font-size: 3em;
+}
+
+/*Seletores
+
+p:first-letter {
+    font-weight: bold;
+}
+
+h1+p {
+    text-indent: 0;
+}
+*/
 
 /*Mobile*/
 
